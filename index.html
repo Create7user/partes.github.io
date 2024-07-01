@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="logorenaper.png" />
+    <link rel="shortcut icon" href="/logorenaper.png" />
     <title class="text-center">Partes de Elementos Informáticos</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -366,7 +366,7 @@
             $(sheet).find('row:first c').attr('s', '25');
             // Agregar logo al documento Excel
             var logo = new Image();
-            logo.src = '/logorenaper.png'; // Ruta del logo
+            logo.src = 'logorenaper.png'; // Ruta del logo
             logo.onload = function() {
                 xlsx.xl.worksheets['sheet1.xml'].getElementsByTagName('worksheet')[0].appendChild(logo);
             };
