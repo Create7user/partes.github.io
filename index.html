@@ -398,7 +398,7 @@
                 });
             }
             // Agregar logo al documento PDF
-            doc.content[1].image = '/logorenaper.png'; // Ruta del logo
+            doc.content[1].image = 'logorenaper.png'; // Ruta del logo
             doc.pageMargins = [80, 100, 40, 60]; // Márgenes del documento
         },
     },
@@ -416,7 +416,7 @@
             // Centrar verticalmente la tabla
             $(win.document.body).find('table').addClass('table-print'); // Agregar clase para estilos de impresión
             // Agregar logo al documento de impresión
-            var logo = $('<img src="/logorenaper.png" style="position:relative; top:55px; left:0px; height:45px;">');
+            var logo = $('<img src="logorenaper.png" style="position:relative; top:55px; left:0px; height:45px;">');
             $(win.document.body).find('h1').prepend(logo);
         }
     },
